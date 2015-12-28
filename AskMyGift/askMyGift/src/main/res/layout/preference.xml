@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:weightSum="3"
+    android:background="#00695C"
+    android:scrollbars="vertical">
+    
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My preferences"
+            android:id="@+id/prefText"
+             android:typeface="sans"
+            android:layout_gravity="center"
+            android:gravity="bottom"
+            android:textIsSelectable="false"
+            android:textColor="@color/white"
+			android:textSize="20sp"
+			android:layout_weight="0.1"/>
+        
+        <View android:layout_height="0.5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/line"/>
+        
+        <ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="2.7"
+    >
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical" 
+          >
+
+            <EditText
+                android:id="@+id/shoeSizes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/shoe"
+                android:drawablePadding="15dp"
+                android:hint="Shoe Sizes "
+                android:textColor="@color/white"
+                android:textColorHint="#D8D9DF" />
+            <requestFocus />
+            
+            <View android:layout_height="0.5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/line"/>
+              
+                
+            <EditText
+                android:id="@+id/casualSizes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/neck_sleeve"
+                android:drawablePadding="15dp"
+                android:hint="Casual Shirt Sizes"
+                android:textColor="@color/white"
+                android:textColorHint="#D8D9DF" />
+            
+                <View android:layout_height="0.5dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/line"/>
+	
+                <EditText
+                android:id="@+id/dressShirtSizes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="25dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/neck_sleeve"
+                android:drawablePadding="15dp"
+                android:hint="Dress Shirt Sizes eg. neck sleeve"
+                android:textColor="@color/white"
+                android:textColorHint="#D8D9DF" />
+            
+                <View android:layout_height="0.5dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/line"/>
+                
+                <EditText
+                android:id="@+id/pantSizes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="25dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/pant"
+                android:drawablePadding="15dp"
+                android:hint="Pants Sizes eg. waist"
+                android:textColor="@color/white"
+                android:textColorHint="#D8D9DF" />
+            
+                <View android:layout_height="0.5dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/line"/>
+                <EditText
+                android:id="@+id/jacketSizes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="25dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/jacket"
+                android:drawablePadding="15dp"
+                android:hint="Jacket Sizes"
+                android:textColor="@color/white"
+                android:textColorHint="#D8D9DF" />
+            
+                <View android:layout_height="0.5dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/line"/>
+                <EditText
+                android:id="@+id/dressSizes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="25dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/dress_size"
+                android:drawablePadding="15dp"
+                android:hint="Dress Sizes"
+                android:textColor="@color/white"
+                android:textColorHint="#D8D9DF" />
+            
+                <View android:layout_height="0.5dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/line"/>
+                
+                <EditText
+                android:id="@+id/hatSizes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="25dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/hat"
+                android:drawablePadding="15dp"
+                android:hint="Hat Sizes"
+                android:textColor="@color/white"
+                android:textColorHint="#D8D9DF" />
+            
+                <View android:layout_height="0.5dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/line"/>
+                 <EditText
+                android:id="@+id/likes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="25dp"
+                android:background="@null"
+                android:drawablePadding="15dp"
+                android:hint="Gifts you Like(I wish too)"
+                android:textColor="@color/white"
+                android:textColorHint="#D8D9DF" />
+            
+                <View android:layout_height="0.5dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/line"/>
+                 <EditText
+                android:id="@+id/dislikes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="25dp"
+                android:background="@null"
+                android:drawablePadding="15dp"
+                android:hint="Gifts you Dislike(I Just hate)"
+                android:textColor="@color/white"
+                android:textColorHint="#D8D9DF" />
+            
+                <View android:layout_height="0.5dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/line"/>
+                
+                <EditText
+                android:id="@+id/ayoc1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="25dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/addyourownchoice"
+                android:drawablePadding="15dp"
+                android:hint="Add your own choices"
+                android:textColor="@color/white"
+                android:textColorHint="#D8D9DF" />
+            
+                <View android:layout_height="0.5dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/line"/>
+                
+                <EditText
+                android:id="@+id/ayoc2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="25dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/addyourownchoice"
+                android:drawablePadding="15dp"
+                android:hint="Add your own choices"
+                android:textColor="@color/white"
+                android:textColorHint="#D8D9DF" />
+            
+                <View android:layout_height="0.5dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/line"/>
+                
+                <EditText
+                android:id="@+id/ayoc3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="25dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/addyourownchoice"
+                android:drawablePadding="15dp"
+                android:hint="Add your own choices"
+                android:textColor="@color/white"
+                android:textColorHint="#D8D9DF" />
+            
+                <View android:layout_height="0.5dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/line"/>
+                
+                
+                <EditText
+                android:id="@+id/ayoc4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="25dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/addyourownchoice"
+                android:drawablePadding="15dp"
+                android:hint="Add your own choices"
+                android:textColor="@color/white"
+                android:textColorHint="#D8D9DF" />
+            
+                <View android:layout_height="0.5dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/line"/>
+                
+                
+
+        </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/prefSave"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background_normal"
+            android:clickable="true"
+            android:text="Save"
+            android:layout_weight="0.2"
+            android:textColor="#000" />
+        
+</LinearLayout>

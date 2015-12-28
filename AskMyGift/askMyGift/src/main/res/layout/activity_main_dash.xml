@@ -1,0 +1,77 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"><!-- As the main content view, the view below consumes the entire
+         space available using match_parent in both dimensions.
+
+-->
+    <RelativeLayout
+        android:background="@drawable/mobile_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/outerRel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/myImage"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="244dp"
+            android:layout_marginEnd="244dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutDash"
+        android:layout_width="match_parent"
+        android:layout_below="@id/outerRel"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="match_parent"
+        tools:context=".DashboardActivity">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+
+            android:layout_alignParentStart="true"
+            android:scrollbars="vertical" />
+
+
+    </RelativeLayout>
+    </RelativeLayout>
+    <!-- android:layout_gravity="start" tells DrawerLayout to treat
+             this as a sliding drawer on the left side for left-to-right
+             languages and on the right side for right-to-left languages.
+             If you're not building against API 17 or higher, use
+             android:layout_gravity="left" instead.
+    --><!-- The drawer is given a fixed width in dp and extends the full height of
+         the container. 
+-->
+    <fragment
+        android:id="@+id/navigation_drawer"
+        android:name="com.turningcloud.Dashboard.NavigationDrawerFragment"
+        android:layout_width="@dimen/navigation_drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        tools:layout="@layout/fragment_navigation_drawer_dash" />
+</android.support.v4.widget.DrawerLayout>

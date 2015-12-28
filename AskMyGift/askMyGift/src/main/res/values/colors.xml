@@ -1,0 +1,43 @@
+<resources>
+
+    <!--
+        Check Android Theme colors for color reference:
+        https://developer.android.com/training/material/images/ThemeColors.png
+
+        Refer also to Color palette for the UI colors you should use:
+        http://www.google.com/design/spec/style/color.html#color-ui-color-palette
+    -->
+
+    <color name="myPrimaryColor">#3F51B5</color>
+    <color name="myPrimaryDarkColor">#3F51B5</color>
+    <color name="myAccentColor">#3F51B5</color>
+    <color name="myDrawerBackground">#F2F2F2</color>
+    <color name="myWindowBackground">#DEDEDE</color>
+    <color name="myTextPrimaryColor">#FFFFFF</color>
+    <color name="myNavigationColor">#000000</color>
+
+    <color name="selected_gray">#ffdbdbdb</color>
+    <color name="white">#FFF</color>
+    <color name="l_blue">#909BAA</color>
+    <color name="d_blue">#6D7B92</color>
+    <color name="gray">#CCCCCC</color>
+    <color name="d_gray">#666</color>
+    <color name="black">#000</color>
+    <color name="webBlue">#E8EEF4</color>
+
+    <color name="feed_bg">#d3d6db</color>
+    <color name="feed_item_bg">#ffffff</color>
+    <color name="feed_item_border">#c2c3c8</color>
+    <color name="link">#0a80d1</color>
+    <color name="timestamp">#a0a3a7</color>
+    <color name="list_item_title">#fff</color>
+    <color name="list_background">#303030</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="list_divider">#272727</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="ColorPrimary">#00897B</color>
+    <color name="ColorPrimaryDark">#00695C</color>
+    <color name="tabsScrollColor">#FFFFFF</color>
+    
+</resources>

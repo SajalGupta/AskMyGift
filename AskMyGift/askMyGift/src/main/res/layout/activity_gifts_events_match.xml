@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#FA8258"
+    android:weightSum="3">
+
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="2"
+    android:orientation="horizontal"
+    android:layout_weight="0.1"
+    >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Events"
+        android:textSize="35dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"/>
+    
+     <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Gifts"
+        android:textSize="35dp"
+        android:gravity="center_horizontal"
+         android:textColor="@color/white"/>
+</LinearLayout>
+ <View android:layout_height="0.5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/line"/>
+
+<LinearLayout
+    
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:layout_weight="2.9"
+     >
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#8a2be2" 
+        android:layout_weight="1">
+    </ListView>
+
+    <com.turningcloud.events.DynamicListView
+        android:id="@+id/listView2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#48d1cc" 
+        android:layout_weight="1">
+    </com.turningcloud.events.DynamicListView>
+</LinearLayout>
+
+<Button
+    android:id="@+id/drawerButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Submit" 
+    android:layout_weight="0.3"/>
+
+</LinearLayout>

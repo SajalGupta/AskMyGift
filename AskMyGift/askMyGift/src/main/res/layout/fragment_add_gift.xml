@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.app.askmygift.main.AddGift"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="#CC6600">
+
+    <!-- TODO: Update blank fragment layout -->
+
+            <ImageView
+                android:id="@+id/viewImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/add_gift"
+                android:src="@drawable/add_gift" 
+                android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="30dp"
+            android:weightSum="2">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scan UPC"
+                android:id="@+id/scanUpcButton"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Photo"
+                android:id="@+id/btnSelectPhoto" 
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleGift"
+            android:hint="Enter Title Here"
+            android:paddingTop="@dimen/activity_horizontal_margin" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/descriptionGift"
+            android:hint="Enter Description Here"
+            android:paddingTop="@dimen/activity_horizontal_margin" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/amountGift"
+            android:hint="Enter Amount Here"
+            android:paddingTop="@dimen/activity_horizontal_margin" />
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/selectMerchantGift"
+            android:hint="Select Merchant"
+            android:paddingTop="@dimen/activity_horizontal_margin" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/urlGift"
+            android:layout_gravity="center_horizontal"
+            android:hint="Enter URL"
+            android:paddingTop="@dimen/activity_horizontal_margin" />
+   
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/button2"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
+
+

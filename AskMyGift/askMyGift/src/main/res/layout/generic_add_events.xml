@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.app.askmygift.main.AddGift"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="#2A72B5">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    
+    
+    <TextView 
+        android:id="@+id/genericHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Your Generic Events"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"/>
+    
+    <View android:layout_height="0.5dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/line"/>
+    
+    
+       
+         <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        >
+         
+        
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleGenericEvent"
+            android:hint="Enter Title Here"
+           />
+
+        
+        
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/descriptionGenericEvent"
+            android:hint="Enter Description Here"
+             />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/StartdateOfEvent"
+            android:hint="Start From- Date Of Event"
+            android:editable="false"
+            android:textColor="@color/white"
+            android:ems="10"
+            android:inputType="none"
+            android:clickable="true" 
+            android:focusable="false"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/EndateOfEvent"
+            android:hint="End to- Date Of Event"
+            android:editable="false"
+            android:textColor="@color/white"
+            android:ems="10"
+            android:inputType="none"
+            android:clickable="true" 
+            android:focusable="false"/>
+
+    </LinearLayout>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/addGenericEvent"
+        android:layout_gravity="center_horizontal" 
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>
+
+

@@ -1,0 +1,169 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="311dp"
+        android:layout_height="242dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/countrycodemsg"
+        android:textColor="@color/white" />
+
+    <Spinner
+        android:id="@+id/countrySpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#7388656b"
+        android:gravity="center_vertical|center_horizontal"
+        android:prompt="@string/country_prompt"
+        android:spinnerMode="dialog" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1" 
+        android:layout_gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/countryCode"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:background="#7388656b"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="none|number"
+            android:text="+91"
+            android:textColor="@color/white" >
+                    </EditText>
+
+        <EditText
+            android:id="@+id/mobileNumber"
+            android:layout_width="234dp"
+            android:layout_height="45dp"
+            android:background="#7388656b"
+            android:ems="10"
+            android:hint="Mobile Number"
+            android:inputType="number"
+            android:textColor="@color/white" />
+	<requestFocus />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submitMobile"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/countryCode"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:onClick="sendSmsVerifyCode"
+        android:text="Submit" />
+
+</LinearLayout>
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:weightSum="1"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="228dp"
+        android:layout_height="129dp"
+        
+        android:layout_weight="0.10">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="228dp"
+        android:layout_height="129dp"
+       
+        android:layout_weight="0.67">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please confirm your country code and mobile number"
+            android:id="@+id/textView6"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:gravity="center_vertical|center_horizontal"
+            />
+
+        <Spinner android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/countrySpinner"
+            android:prompt="@string/country_prompt"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_gravity="center"
+            android:spinnerMode="dialog"
+            
+            android:background="#7388656b" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           
+            android:weightSum="1">
+
+            <EditText
+                android:layout_width="69dp"
+                android:layout_height="wrap_content"
+                android:inputType="none|number"
+                android:ems="10"
+                android:id="@+id/countryCode"
+                android:textColor="@color/white"
+                android:editable="false"
+                android:enabled="false"
+                android:background="#7388656b"
+               
+                android:text="+91"
+              />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/mobileNumber"
+                android:textColor="@color/white"
+                android:background="#7388656b"
+                
+                android:hint="Mobile Number" />
+        </LinearLayout>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/submitMobile"
+            android:layout_below="@+id/countryCode"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:onClick="sendSmsVerifyCode"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+-->

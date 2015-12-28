@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.turningcloud.askmygift.updatewishlist.UpdateWishlistActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout2">
+
+        <RelativeLayout
+            android:id="@+id/outerRel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/app_bar"
+                layout="@layout/app_bar"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wishlist"
+            android:id="@+id/whislistTextView"
+            android:textColor="#000000"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/outerRel"
+            android:layout_centerHorizontal="true" />
+
+
+
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+       android:layout_margin="10dp"
+        android:id="@+id/my_recycler_view_wishlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/relativeLayout2"
+        android:layout_alignParentStart="true"
+        android:scrollbars="vertical" />
+
+
+</RelativeLayout>

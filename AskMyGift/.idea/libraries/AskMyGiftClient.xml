@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="AskMyGiftClient">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/askMyGift/libs/AskMyGiftClient.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

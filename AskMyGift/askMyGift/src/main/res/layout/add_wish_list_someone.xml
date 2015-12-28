@@ -1,0 +1,160 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:orientation="vertical" 
+ 	>
+    
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+        
+         android:orientation="vertical">
+         
+         <com.turningcloud.drawer.RoundedImageView
+                android:id="@+id/viewImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/add_gift"
+                 />
+            
+            </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/scanBarCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scan UPC"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Photo"
+                android:id="@+id/selectPhoto" 
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_marginLeft="20dp"
+             android:layout_marginRight="20dp"
+             android:layout_marginTop="10dp"
+             android:gravity="center_vertical|center_horizontal"
+             android:orientation="vertical" >
+
+             <EditText
+                 android:id="@+id/title"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@null"
+                 android:hint="Enter title here"
+                 android:inputType="text" />
+
+             <View
+                 android:layout_width="match_parent"
+                 android:layout_height="0.5dp"
+                 android:layout_marginTop="5dp"
+                 android:background="@drawable/line" />
+
+             <EditText
+                 android:id="@+id/description"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:background="@null"
+                 android:hint="Enter Description here" />
+
+             <View
+                 android:layout_width="match_parent"
+                 android:layout_height="0.5dp"
+                 android:layout_marginTop="5dp"
+                 android:background="@drawable/line" />
+
+             <EditText
+                 android:id="@+id/amount"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:background="@null"
+                 android:hint="Enter Amount here" />
+
+             <View
+                 android:layout_width="match_parent"
+                 android:layout_height="0.5dp"
+                 android:layout_marginTop="5dp"
+                 android:background="@drawable/line" />
+
+             <Spinner
+                 android:id="@+id/spinnerMerchants"
+                 android:layout_width="match_parent"
+                 android:layout_height="36dp"
+                 android:layout_weight="0.23" 
+                 android:background="#7388656b"
+                 android:layout_marginTop="10dp"/>
+
+             <View
+                 android:layout_width="match_parent"
+                 android:layout_height="0.5dp"
+                 android:layout_marginTop="5dp"
+                 android:background="@drawable/line" />
+
+             <Spinner
+                 android:id="@+id/spinnerEvents"
+                 android:layout_width="match_parent"
+                 android:layout_height="36dp"
+                 android:layout_marginTop="10dp" 
+                 android:background="#7388656b"/>
+
+             <View
+                 android:layout_width="match_parent"
+                 android:layout_height="0.5dp"
+                 android:layout_marginTop="5dp"
+                 android:background="@drawable/line" />
+
+             <EditText
+                 android:id="@+id/url"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:background="@null"
+                 android:hint="Enter Url"
+                 android:inputType="textUri" />
+
+             <View
+                 android:layout_width="match_parent"
+                 android:layout_height="0.5dp"
+                 android:layout_marginTop="5dp"
+                 android:background="@drawable/line" />
+         </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+>
+        <Button
+            android:id="@+id/Addgifts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Add" />
+ 
+            </LinearLayout>
+            
+
+</LinearLayout>
+
+

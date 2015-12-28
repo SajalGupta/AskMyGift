@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.app.askmygift.main.AddGift"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="#2A72B5">
+
+
+    
+        
+         <RadioGroup
+        android:id="@+id/radioEvents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:weightSum="2"
+        android:layout_marginTop="20dp">
+ 
+        <RadioButton
+            android:id="@+id/radioGeneric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generic Events" 
+            android:checked="true" 
+            android:layout_weight="1"/>
+        
+         <RadioButton
+                android:id="@+id/radioPersonal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal Events" 
+                android:layout_weight="1"
+                />
+ 
+    </RadioGroup>
+    
+         
+         <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        >
+         
+        
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleEvent"
+            android:hint="Enter Title Here"
+           />
+
+        
+        
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/descriptionEvets"
+            android:hint="Enter Description Here"
+             />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/StartdateOfEvent"
+            android:hint="Start From- Date Of Event"
+            android:editable="false"
+            android:textColor="@color/white"
+            android:ems="10"
+            android:inputType="none"
+            android:clickable="true" 
+            android:focusable="false"/>
+        
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/EndateOfEvent"
+            android:hint="End to- Date Of Event"
+            android:editable="false"
+            android:textColor="@color/white"
+            android:ems="10"
+            android:inputType="none"
+            android:clickable="true" 
+            android:focusable="false"/>
+
+    </LinearLayout>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/addEvents"
+        android:layout_gravity="center_horizontal" 
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>
+
+

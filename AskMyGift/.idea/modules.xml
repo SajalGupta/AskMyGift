@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AskMyGift.iml" filepath="$PROJECT_DIR$/AskMyGift.iml" />
+      <module fileurl="file://$PROJECT_DIR$/askMyGift/askMyGift.iml" filepath="$PROJECT_DIR$/askMyGift/askMyGift.iml" />
+      <module fileurl="file://$PROJECT_DIR$/facebookSDK/facebookSDK.iml" filepath="$PROJECT_DIR$/facebookSDK/facebookSDK.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,169 @@
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<LinearLayout
+ 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8F15B8"
+    android:orientation="vertical" 
+ 	>
+         <com.turningcloud.drawer.RoundedImageView
+             android:id="@+id/viewImage"
+             android:layout_width="100dp"
+             android:layout_height="100dp"
+             android:layout_gravity="center_horizontal"
+             android:src="@drawable/blank"
+             android:layout_marginTop="15dp" 
+             />
+
+         <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+            
+         <EditText
+                android:id="@+id/fullname"
+                android:background="@null"
+                android:hint="Enter your full name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:inputType="text"/>
+         
+         <View android:layout_height="0.5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/line"/>
+
+      <EditText
+                android:id="@+id/dateOfBirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                android:hint="Click to enter Date Of Birth"
+                android:textColor="@color/white"
+                android:inputType="none"
+                android:clickable="true"
+                android:focusable="false"
+                android:editable="false"/>
+            
+                <View android:layout_height="0.5dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/line"/>
+                
+      <EditText
+                android:id="@+id/AddLine1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                android:hint="Address Line 1"
+                 />
+            
+                <View android:layout_height="0.5dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/line"/>
+                
+        <EditText
+                android:id="@+id/AddLine2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                android:hint="Address Line 2"
+                 />
+            
+                <View android:layout_height="0.5dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/line"/>
+                
+                <EditText
+                android:id="@+id/dstrict"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                android:hint="Enter your District"
+                 />
+            
+                <View android:layout_height="0.5dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/line"/>
+                
+                <EditText
+                android:id="@+id/pincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                android:hint="Enter your Pin Code"
+                 />
+            
+                <View android:layout_height="0.5dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/line"/>
+                
+                
+                 <RadioGroup
+        android:id="@+id/radioSex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:weightSum="2"
+        android:layout_marginTop="20dp">
+ 
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male" 
+            android:checked="true" 
+            android:layout_weight="1"/>
+        
+         <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female" 
+                android:layout_weight="1"
+                />
+ 
+    </RadioGroup>
+                
+     
+        
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+>
+
+        <Button
+            android:id="@+id/UpdateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Add" />
+ 
+            </LinearLayout>
+            
+
+</LinearLayout>
+
+</ScrollView>
